@@ -1,0 +1,55 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edt_sobrenome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-3dp">
+
+    <Button
+        android:id="@+id/btn_conversor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Salva"
+        app:layout_constraintEnd_toEndOf="@+id/edt_sobreNome"
+        app:layout_constraintStart_toStartOf="@+id/edt_sobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sobreNome" />
+
+    <TextView
+        android:id="@+id/txt_nomeCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_conversor"
+        app:layout_constraintTop_toBottomOf="@+id/btn_conversor" />
+
+    <EditText
+        android:id="@+id/edt_primeiroNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_sobreNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="End Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/edt_primeiroNome"
+        app:layout_constraintTop_toBottomOf="@+id/edt_primeiroNome" />
+
+</LinearLayout>
